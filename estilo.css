@@ -1,0 +1,114 @@
+*Tipo de fuentes a usar*/
+@font-face {
+    font-family: "titulos";
+    src: url(./Fonts/Amaranth-Bold.ttf);
+ 
+  }
+  @font-face {
+    font-family: "textos";
+    src: url(./Fonts/TitilliumWeb-Regular.ttf);
+  }
+/*Tipo y color de fuentes en general para las paginas del sitio web */
+h1{
+    font-family: titulos;
+    font-size: 32px;
+    color: rgb(255, 41, 41);
+}
+p{
+    font-family: textos;
+    font-size: 16px;
+    color: black;
+}
+h2{
+    font-family: titulos;
+    font-size: 32px;
+    color: rgb(255, 41, 41);
+}
+h3{
+    font-family: titulos;
+    font-size: 32px;
+    color: rgb(255, 41, 41);
+}
+nav ul{
+    list-style: none;
+}
+.pedidos a{
+    text-decoration:none;
+    font-family: titulos;
+    font-size: 16px;
+    color: aqua;
+}
+.enlaces a{
+    text-decoration:none;
+    font-family: titulos;
+    font-size: 20px;
+    color: aqua;
+    
+}
+ footer div p{
+    font-family: texto;
+    font-size: 16px;
+    color: aqua;
+ }
+span{
+    font-family: titulos;
+    color: rgb(255, 41, 41);
+}
+footer p{
+    font-family: titulo;
+    font-size: 16px;
+    color: aqua;
+}
+.producto{
+    font-family: titulos;
+    font-size: 40;
+    color: rgb(255, 41, 41);
+}
+.pregunta{
+    font-family: titulo;
+    font-style: italic;
+    font-size:24px;
+    color: rgb(1, 1, 1);
+}
+.encuesta{
+    font-family: texto;
+    font-size: 16px;
+    color: rgb(1, 1, 1);
+}
+
+/*Fondos de color*/
+body{
+    background-color: aqua;
+}
+header{
+   /*position: fixed;
+    top: 0;
+    left: 0;
+     width: 100%;*/
+     background-color: rgb(68, 68, 114);
+}
+
+footer{
+    background-color: rgb(68, 68, 114);
+    background-position: center;
+}
+/*encuesta*/
+.enviar{
+    background-color: rgb(68, 68, 114);
+    width: 200px;
+    border: 0;
+    padding: 10px;
+    margin: 20px;
+ justify-content: center;
+}
+
+/* Formulario*/
+.contacto{
+      background-color: rgb(176, 205, 230);
+    width: 300px;
+    border: 5px solid  rgb(68, 68, 114);
+    padding: 10px;
+    margin: 20px;
+}
+/*
+
