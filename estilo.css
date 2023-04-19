@@ -53,23 +53,19 @@
     .nav-link{
         font-family: titulos;
         color:#e7e6f6 !important;
-    }
-        
+    } 
     .nav-link:hover{
         color: #fbbe63!important;
         text-decoration: none;
 
     }
-    .navbar-toggler-icon{
-        color: #312a89;
-   }
     .logo{
         margin: 10px;
         display: grid;
         justify-content: center;
         position: relative;
     }
-    .pedidos-nav{
+    .pedidos{
         display:flex;
         justify-content: center;
         text-decoration: none;
@@ -79,11 +75,12 @@
         list-style: none;
         margin: 0;
     }
-    .pedidos-item{
-        padding: 8px;
+    /* .pedidos-item{
+        padding: 20px;
         color: #e7e6f6;
-    }
+    } */
     .pedidos-link{
+        padding: 8px;
         font-family: titulos;
         color: #e7e6f6;
     }
@@ -91,7 +88,13 @@
         color: #fbbe63;
         text-decoration: none;
     }
+    #pedidos-btn{
+        display: none;
+    }
+   
+     /* Fin header */
     /* Footer */
+
     .enlaces a{
         text-decoration:none;
         font-family: titulos;
@@ -112,7 +115,31 @@
         font-family: titulo;
         font-size: 16px;
         color: aqua;
+    } 
+    footer{
+        background-color: #073e53;
+        background-position: center;
+        display: grid;        
+        grid-template-columns: repeat(6 , 1fr);
+        grid-template-rows: auto;
+        align-items: center;
     }
+    .logoFooter{
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-around;
+    }
+    .dona{
+        font-size: 16px;
+        color: #e7e6f6;
+    }
+    .enlaces{
+        grid-column: 5/7; 
+        grid-template-rows: 1/2;
+        display: flex;
+        justify-content: space-around;
+    }
+      /* Fin Footer */
     .producto{
         font-family: titulos;
         font-size: 40;
@@ -145,30 +172,7 @@
     
     
     
-    /*Footer*/
-    footer{
-        background-color: #073e53;
-        background-position: center;
-        display: grid;        
-        grid-template-columns: repeat(6 , 1fr);
-        grid-template-rows: auto;
-        align-items: center;
-    }
-    .logoFooter{
-        grid-column: 1/5;
-        display: flex;
-        justify-content: space-around;
-    }
-    .dona{
-        font-size: 16px;
-        color: #e7e6f6;
-    }
-    .enlaces{
-        grid-column: 5/7; 
-        grid-template-rows: 1/2;
-        display: flex;
-        justify-content: space-around;
-    }
+
 
     /*Home*/
     
@@ -191,3 +195,78 @@
         margin: 20px;
     }
 
+    @media only screen and (min-width:320px) and (max-width:768px){
+       /* #pedidos-btn{
+            display: none;
+       }
+        .pedidos{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+             */
+       
+        .b-take{
+             position:fixed;
+             width:60px;
+             height:45px;
+             line-height: 15px;
+             bottom: 20px;
+             right:25px;
+             background:#073e53;
+             color:#e7e6f6;
+             border-radius:5px;
+             text-align:center;
+             font-size:16px;
+             box-shadow: 0px 1px 10px rgba(0,0,0,0.3),0px 1px 10px rgba(0,0,0,0.3);
+             z-index:200;
+             transition: all 300ms ease;
+        }
+        .b-pedido{
+            position:fixed;
+            width:60px;
+            height:45px;
+            line-height: 15px;
+            bottom:70px;
+            right:25px;
+            background:#073e53;
+            color:#e7e6f6;
+            border-radius:5px;
+            text-align:center;
+            font-size:14px;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+            z-index:200;
+            transition: all 300ms ease;
+       }
+       .b-rapp{
+        position:fixed;
+        width:60px;
+        height:45px;
+        line-height: 15px;
+        bottom:120px;
+        right:25px;
+        background:#073e53;
+        color:#e7e6f6;
+        border-radius:5px;
+        text-align:center;
+        font-size:15px;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+        z-index:200;
+        transition: all 300ms ease;
+   }
+    /* .pedidos-nav a:hover{
+        color: #fbbe63;
+    }    
+    .pedidos-nav a{
+        margin-bottom: -15px;
+        opacity: 1;
+        visibility: hidden;
+    }
+    #pedidos-btn:checked~  .pedidos-nav{
+        margin-bottom:15px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .fa-solid .fa-plus{
+        color: #fbbe63;
+    } */
+}
