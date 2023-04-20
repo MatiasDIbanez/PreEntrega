@@ -347,6 +347,36 @@
 .redes a{
 padding: 10px;
 }
+    /* Nosotros */
+    .nosotros{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(6,auto);
+    }
+    .cabecera{
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+    .texto-nosotros{
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .imagen-nosotros{
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+    .cabecera-2{
+        grid-column: 1;
+         grid-row: 4/5;
+    }
+    .texto-ubicacion{
+        grid-column: 1;
+        grid-row: 5/6;
+    }
+    .maps{
+        grid-column: 1;
+        grid-row: 6/7;
+    }    /* Fin Nosotros */
 }
 
     /* .pedidos-nav a:hover{
