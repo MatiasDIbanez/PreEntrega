@@ -171,34 +171,55 @@
         display: grid;
         grid-template-columns: repeat(4,auto);
         grid-template-rows: repeat(6,auto);
+        padding: 2px;
     }
     .cabecera{
         display: grid;
-        grid-column: 1/3;
+        grid-column:1/3;
         grid-row: 1/2;
+    }
+    .cabecera h1{
+        text-align: center;
     }
     .texto-nosotros{
         display: grid;
         grid-column: 1/3;
         grid-row: 2/4;
+        text-align: center;
     }
     .imagen-nosotros{
         display: grid;
         grid-column: 3/5;
         grid-row: 1/4;
+        background-image: url(./Img/Nosotros/FRENT\ 3.jpg);
+        background-size: cover;
+        /* position: end; */
+        border-radius: 3%;     
     }
     .cabecera-2{
+        text-align: center;
         grid-column: 3/5;
         grid-row: 4/5;
+    }
+    .cabecera-2 h2{
+        text-align: start;
+        margin-left: 30px;
+        margin-top: 40px;
     }
     .texto-ubicacion{
         grid-column: 3/5;
         grid-row: 5/7;
+        padding: 20px;
+        text-align: start;
     }
     .maps{
+        width: 100px;
+        height: 100px;
         grid-column: 1/3;
         grid-row: 4/7;
-    }    /* Fin Nosotros */
+        background: cover;
+
+      }    /* Fin Nosotros */
       .producto{
         font-family: titulos;
         font-size: 40;
@@ -361,9 +382,15 @@ padding: 10px;
         grid-column: 1;
         grid-row: 2/3;
     }
+
     .imagen-nosotros{
+        margin: 20px;
         grid-column: 1;
         grid-row: 3/4;
+        background-image: url(./Img/Nosotros/FRENT\ 3.jpg);
+        background-size: cover;
+        /* position: end; */
+        border-radius: 3%;        
     }
     .cabecera-2{
         grid-column: 1;
@@ -374,6 +401,8 @@ padding: 10px;
         grid-row: 5/6;
     }
     .maps{
+        height: 100px;
+        width: 100px;
         grid-column: 1;
         grid-row: 6/7;
     }    /* Fin Nosotros */
