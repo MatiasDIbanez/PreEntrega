@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- Menu con enlaces relativos -->
-        <div class="menu">
+          <div class="menu">
             <!-- Inicio de codigo de Navbar de boostrap-->
             <nav class="navbar navbar-expand-md navbar-dark ">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -42,32 +42,25 @@
                 </div>
               </nav>
             <!-- Fin de codigo Navbar -->
-        </div>
-        <div class="logo"><!-- Logo centro -->
-            <a href="../index.html"><img src="../Img/LogoHeader.png" alt=""height="75px" width="75px"></a> 
-        </div>
-        <div class="pedidos">
-            <!-- enlaces a url -->
-                <ul class="pedidos-nav">
-                    <li class="pedidos-item">
-                        <a class="pedidos-link " href="www.wpp">Take Away</a>
-                    </li>
-                    <li class="pedidos-item ">
-                        <a class="pedidos-link" href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella">PedidosYa</a>
-                    </li>
-                    <li class="pedidos-item">
-                        <a class="pedidos-link " href="https://www.rappi.com.ar/restaurantes/115829-donatella">Rappi</a>
-                    </li>
-                    <li class="pedidos-item">
-                        <a class="pedidos-link  " href="www.wpp"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="pedidos-item">
-                        <a class="pedidos-link  " href="www.wpp"> <i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
-            <!-- Fin de enlaces -->
-        </div>
-     </header>
+         </div>
+         <div class="logo"><!-- Logo centro -->
+          <a href="./index.html"><img src="../Img/LogoHeader.png" alt=""height="75px" width="75px"></a> 
+      </div>
+      
+      <div class="pedidos">
+          <!-- enlaces a url -->
+          <input type="checkbox" id="pedidos-btn">
+          <div class="pedidos-nav">
+              <a class="pedidos-link b-take" href="www.wpp">Take Away</a>
+              <a class="pedidos-link b-pedido" href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella">Pedidos Ya</a>
+              <a class="pedidos-link b-rapp" href="https://www.rappi.com.ar/restaurantes/115829-donatella">Rappi</a>
+              <a class="pedidos-link b-face " href="www.wpp"><i class="fab fa-facebook"></i></a>
+              <a class="pedidos-link  b-insta" href="www.wpp"> <i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="pedidos-btn" ><label for="pedidos-btn" class="fa-solid fa-plus"> <i class="fa-solid fa-plus"></i></label></div>
+         <!-- Fin de enlaces -->
+      </div>
+      </header>
     <h1>Encuesta</h1> 
     
     <form action=""></form>
@@ -113,17 +106,24 @@
                 
     </form>
 
-    <footer>
-        <div>
-            <img src="../Img/LogoFooter.png" alt=""height="60px" width="60px">
-            <p>Donatella. Todos los derechos reservados 2019-2023.</p>
+    <footer >
+        <div class="logoFooter">
+          <img src="../Img/LogoFooter.png" alt=""height="60px" width="60px">
         </div>
-        <p>Seguinos en nuestras redes</p>
-        <div class="enlaces"><!-- enlaces a redes sociales -->
-         
-            <a href="https://www.instagram.com/donatella__empanadas/">Instagram</a>
-            <a href="https://www.facebook.com/donatella.empanadas">Facebook</a>
-        </div>    
-    </footer>
-</body>
+        <div class="derechos">
+          <p> <span class="Dona"> Donatella </span>. Todos los derechos reservados 2019-2023.</p>
+        </div>
+        <div class="redes"><!-- enlaces a redes sociales -->
+          <p>Seguinos en nuestras redes</p>              
+          <a href="https://www.instagram.com/donatella__empanadas/"> <i class="fab fa-instagram"></i></a>
+            <a  href="https://www.facebook.com/donatella.empanadas"><i class="fab fa-facebook"></i></a>
+          </div>    
+        </footer>
+        
+        <!-- script de  boostrap -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+      </body>
+  </body>
 </html>
