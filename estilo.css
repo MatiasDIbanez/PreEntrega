@@ -203,7 +203,7 @@ margin-inline: center;
   display: grid;
   grid-column: 1/3;
   grid-row: 2/4;
-  text-align: center;
+  text-align: start;
   padding-block: 10px;
 }
 .imagen-nosotros {
@@ -229,12 +229,12 @@ margin-inline: center;
   text-align: start;
 }
 .maps {
-  width: 100%;
-  height: auto;
-  grid-column: 1/3;
+   grid-column: 1/3;
   grid-row: 4/7;
-  justify-content: center;
-  align-items: center;
+}
+.maps iframe{
+  width: fit-content;
+  height: fit-content;
 } /* Fin Nosotros */
 .producto {
   font-family: titulos;
@@ -378,6 +378,7 @@ body {
     margin: 0;
   }
   .texto-nosotros {
+    text-align: center;
     grid-column: 1;
     grid-row: 2/3;
     padding: 10px;
@@ -410,20 +411,3 @@ body {
     grid-row: 6/7;
   } /* Fin Nosotros */
 }
-
-/* .pedidos-nav a:hover{
-        color: #fbbe63;
-    }    
-    .pedidos-nav a{
-        margin-bottom: -15px;
-        opacity: 1;
-        visibility: hidden;
-    }
-    #pedidos-btn:checked~  .pedidos-nav{
-        margin-bottom:15px;
-        opacity: 1;
-        visibility: visible;
-    }
-    .fa-solid .fa-plus{
-        color: #fbbe63;
-    } */
