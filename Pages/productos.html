@@ -1,133 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link de vinculo a boostrap 4.6-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
     <!-- Link a fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../estilo.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../estilo.css" />
     <title>Productos</title>
-</head>
-<body>
-  <header>
-    <!-- Menu con enlaces relativos -->
+  </head>
+  <body>
+    <header>
+      <!-- Menu con enlaces relativos -->
       <div class="menu">
         <!-- Inicio de codigo de Navbar de boostrap-->
-        <nav class="navbar navbar-expand-md navbar-dark ">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./productos.html"><span class="aqui">Productos</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="./encuesta.html">Encuesta</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="./contactos.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html"
+                  ><span class="aqui">Productos</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./encuesta.html">Encuesta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <!-- Fin de codigo Navbar -->
-     </div>
-     <div class="logo"><!-- Logo centro -->
-      <a href="./index.html"><img src="../Img/LogoHeader.png" alt=""height="75px" width="75px"></a> 
-  </div>
-  
-  <div class="pedidos">
-      <!-- enlaces a url -->
-      <input type="checkbox" id="pedidos-btn">
-      <div class="pedidos-nav">
-          <a class="pedidos-link b-take" href="www.wpp">Take Away</a>
-          <a class="pedidos-link b-pedido" href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella">Pedidos Ya</a>
-          <a class="pedidos-link b-rapp" href="https://www.rappi.com.ar/restaurantes/115829-donatella">Rappi</a>
-          <a class="pedidos-link b-face " href="www.wpp"><i class="fab fa-facebook"></i></a>
-          <a class="pedidos-link  b-insta" href="www.wpp"> <i class="fab fa-instagram"></i></a>
       </div>
-      <div class="pedidos-btn" ><label for="pedidos-btn" class="fa-solid fa-plus"> <i class="fa-solid fa-plus"></i></label></div>
-     <!-- Fin de enlaces -->
-  </div>
-  </header>
-     <h1>Productos</h1>
-     <!-- Menu para diferentes productos -->
-     <!-- La idea es que aparezcan los distintos productos por categoria-->
+      <div class="logo">
+        <!-- Logo centro -->
+        <a href="./index.html"
+          ><img src="../Img/LogoHeader.png" alt="" height="75px" width="75px"
+        /></a>
+      </div>
 
-     <nav><ul>
-         <li>Empanada</li>
-         <li>Especiales</li>
-         <li>Veganas</li>
-         <li>Dulces</li>
-         <li>Postres</li>
-     </ul>
-     </nav>
-          <!-- En caso de que se precise otro lenguaje para eso, voy a optar por
-    poner cada categoria abajo de una otra -->
-    <div class="producto">Empanadas</div>
-    <div>
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-    </div>
-    <div class="producto">Especiales</div>
-    <div >
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
+      <div class="pedidos">
+        <!-- enlaces a url -->
+        <input type="checkbox" id="pedidos-btn" />
+        <div class="pedidos-nav">
+          <a class="pedidos-link b-take" href="www.wpp">Take Away</a>
+          <a
+            class="pedidos-link b-pedido"
+            href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella"
+            >Pedidos Ya</a
+          >
+          <a
+            class="pedidos-link b-rapp"
+            href="https://www.rappi.com.ar/restaurantes/115829-donatella"
+            >Rappi</a
+          >
+          <a class="pedidos-link b-face" href="www.wpp"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a class="pedidos-link b-insta" href="www.wpp">
+            <i class="fab fa-instagram"></i
+          ></a>
         </div>
-    <div class="producto">Veganas</div>
-    <div >
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
+        <div class="pedidos-btn">
+          <label for="pedidos-btn" class="fa-solid fa-plus">
+            <i class="fa-solid fa-plus"></i
+          ></label>
+        </div>
+        <!-- Fin de enlaces -->
+      </div>
+    </header>
+      <div class="producto-encabezado"><h1>Productos</h1></div>
+    <!-- Menu para diferentes productos -->
+    <!-- La idea es que aparezcan los distintos productos por categoria-->
+    
+    <nav class="producto-menu">
+      <ul>
+        <li>Clasicas</li>
+        <li>Especiales</li>
+        <li>Veganas</li>
+        <li>Dulces</li>
+        <li>Postres</li>
+      </ul>
+    </nav>
+    <!-- En caso de que se precise otro lenguaje para eso, voy a optar por
+    poner cada categoria abajo de una otra -->
+    <div class="producto clasica">
+      <div class="item-producto clasica1">item1</div>
+      <div class="item-producto clasica2">item2</div>
+      <div class="item-producto clasica3">item3</div>
+      <div class="item-producto clasica4">item4</div>
+      <div class="item-producto clasica5">item5</div>
+      <div class="item-producto clasica6">item6</div>
+      <div class="item-producto clasica7">item7</div>
+      <div class="item-producto clasica8">item8</div>
+      <div class="item-producto clasica9">item9</div>
+      <div class="item-producto clasica10">item10</div>
+    <div class="item-producto clasica11">item11</div>
     </div>
-    <div class="producto">Dulces</div>
-    <div >
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
+    <nav class="producto-menu">
+      <ul>
+        <li>Clasicas</li>
+        <li>Especiales</li>
+        <li>Veganas</li>
+        <li>Dulces</li>
+        <li>Postres</li>
+      </ul>
+    </nav>
+
+    <div class="producto especial">
+    <div class="item-producto especial1">item-esp1</div>
+    <div class="item-producto especial2">item-esp2</div>
+    <div class="item-producto especial3">item-esp3</div>
+    <div class="item-producto especial4">item-esp4</div>
     </div>
-    <div class="producto">Postres</div>
-    <div class="galeria2">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
-        <img src="../Img/imgreferencia.jpg" alt="" width="200px" height="200px">
+    <div class="producto vegana">
+      <div class="item-producto vegana1">item-veg1</div>
+      <div class="item-producto vegana2">item-veg2</div>
+      <div class="item-producto vegana3">item-veg3</div>
+      <div class="item-producto vegana4">item-veg4</div>
     </div>
-    <footer >
+    <div class="producto dulce">
+     <div class="item-producto dul1">item-dul1</div>
+     <div class="item-producto dul2">item-dul2</div>
+    </div>
+    <div class="producto postre">Postres</div>
+        <div class="item-producto postre1">postre1</div>
+        <div class="item-producto postre2">postre2</div>
+        <div class="item-producto postre3">postre3</div>
+        <div class="item-producto postre4">postre4</div>
+    </div>
+      <footer>
       <div class="logoFooter">
-        <img src="../Img/LogoFooter.png" alt=""height="60px" width="60px">
+        <img src="../Img/LogoFooter.png" alt="" height="60px" width="60px" />
       </div>
       <div class="derechos">
-        <p> <span class="Dona"> Donatella </span>. Todos los derechos reservados 2019-2023.</p>
+        <p>
+          <span class="Dona"> Donatella </span>. Todos los derechos reservados
+          2019-2023.
+        </p>
       </div>
-      <div class="redes"><!-- enlaces a redes sociales -->
-        <p>Seguinos en nuestras redes</p>              
-        <a href="https://www.instagram.com/donatella__empanadas/"> <i class="fab fa-instagram"></i></a>
-          <a  href="https://www.facebook.com/donatella.empanadas"><i class="fab fa-facebook"></i></a>
-        </div>    
-      </footer>
-      
-      <!-- script de  boostrap -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    </body>
+      <div class="redes">
+        <!-- enlaces a redes sociales -->
+        <p>Seguinos en nuestras redes</p>
+        <a href="https://www.instagram.com/donatella__empanadas/">
+          <i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/donatella.empanadas"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- script de  boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -84,7 +84,6 @@ header {
 #pedidos-btn {
   display: none;
 }
-
 /* Fin header */
 /* Footer */
 .redes a {
@@ -236,11 +235,68 @@ margin-inline: center;
   width: fit-content;
   height: fit-content;
 } /* Fin Nosotros */
+/* Productos */
+
 .producto {
   font-family: titulos;
   font-size: 40;
   color: rgb(255, 41, 41);
 }
+.producto-encabezado{
+  padding-block: 20px;
+ text-align: center;
+}
+.producto-menu{
+  max-width: 768px;
+  margin-inline: auto;
+  padding-inline: 10px;
+  background-color: #073d53d3 ;
+  border-radius: 8px;
+  height: 50px;
+}
+.producto-menu ul{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-block: 7px;
+  }
+  .producto-menu ul li{
+     padding: 4px;
+    font-family: titulos;
+    color: #e7e6f6;
+  }
+  .producto-menu ul li:hover{
+   background-color:#073e53;
+   border-radius: 8px;
+  }
+  .producto{
+    padding-block: 20px;
+    max-width: 750px;
+    margin-inline: auto;
+    /* height: 100vh; */
+    display: grid;
+    grid: nowrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .item-producto{
+    background-color: #fbbe63; 
+       width: 240px;
+      height:240px;
+  }
+  .clasica{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    gap: 20px 10px;
+  }
+  .especial{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    gap: 20px 10px;
+  }
+/* Fin Productos */
 .pregunta {
   font-family: titulo;
   font-style: italic;
@@ -261,7 +317,7 @@ body {
   /* min-height: 100vh;
      */
 }
-/*Home*/
+
 /*encuesta*/
 .enviar {
   background-color: rgb(68, 68, 114);
