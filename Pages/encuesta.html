@@ -1,129 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link de vinculo a boostrap 4.6-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Link a fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="../estilo.css">
-    <title>Encuesta</title>
-</head>
-<body>
-    <header>
-        <!-- Menu con enlaces relativos -->
-          <div class="menu">
-            <!-- Inicio de codigo de Navbar de boostrap-->
-            <nav class="navbar navbar-expand-md navbar-dark ">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="../index.html"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="./encuesta.html"><span class="aqui">Encuesta</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="./contactos.html">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            <!-- Fin de codigo Navbar -->
-         </div>
-         <div class="logo"><!-- Logo centro -->
-          <a href="./index.html"><img src="../Img/LogoHeader.png" alt=""height="90px" width="90px"></a> 
-      </div>
-      
-      <div class="pedidos">
-          <!-- enlaces a url -->
-          <input type="checkbox" id="pedidos-btn">
-          <div class="pedidos-nav">
-              <a class="pedidos-link b-take" href="www.wpp">Take Away</a>
-              <a class="pedidos-link b-pedido" href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella">Pedidos Ya</a>
-              <a class="pedidos-link b-rapp" href="https://www.rappi.com.ar/restaurantes/115829-donatella">Rappi</a>
-              <a class="pedidos-link b-face " href="www.wpp"><i class="fab fa-facebook"></i></a>
-              <a class="pedidos-link  b-insta" href="www.wpp"> <i class="fab fa-instagram"></i></a>
-          </div>
-          <div class="pedidos-btn" ><label for="pedidos-btn" class="fa-solid fa-plus"> <i class="fa-solid fa-plus"></i></label></div>
-         <!-- Fin de enlaces -->
-      </div>
-      </header>
-    <h1>Encuesta</h1> 
-    
-    <form action=""></form>
-    <form >
-        <!-- Preguntas de la encuesta,  orientadas a estudio de mercado-->
-        <div class="pregunta">Pregunta 1</div>
-            <div>opcion1</div>
-                <input type="radio" name="pregunta1" value="opcion1" />
-            <div>opcion2</div>
-                <input type="radio" name="pregunta1" value="opcion2" />
-            <div>opcion3</div>
-                <input type="radio" name="pregunta1" value="opcion3" />
-            <div>opcion4</div>
-                <input type="radio" name="pregunta1" value="opcion4" />
-        <div class="pregunta">Pregunta 2</div>
-            <div>opcion1</div>
-                <input type="radio" name="pregunta2" value="opcion1" />
-            <div>opcion2</div>
-                <input type="radio" name="pregunta2" value="opcion2" />
-            <div>opcion3</div>
-                <input type="radio" name="pregunta2" value="opcion3" />
-            <div>opcion4</div>
-                <input type="radio" name="pregunta2" value="opcion4" />
-        <div class="pregunta">Pregunta 3</div>
-            <div>opcion1</div>
-                <input type="radio" name="pregunta3" value="opcion1" />
-            <div>opcion2</div>
-                <input type="radio" name="pregunta3" value="opcion2" />
-            <div>opcion3</div>
-                <input type="radio" name="pregunta3" value="opcion3" />
-            <div>opcion4</div>
-                <input type="radio" name="pregunta3" value="opcion4" />  
-         <div class="pregunta">Pregunta 4</div>
-            <div>opcion1</div>
-                <input type="radio" name="pregunta4" value="opcion1" />
-            <div>opcion2</div>
-                <input type="radio" name="pregunta4" value="opcion2" />
-             <div>opcion3</div>
-                <input type="radio" name="pregunta4" value="opcion3" />
-            <div>opcion4</div>
-                <input type="radio" name="pregunta4" value="opcion4" />            
-        <div class="enviar"><input type="submit" value="Enviar" ></div>    
-                
-    </form>
 
-    <footer >
-        <div class="logoFooter">
-          <img src="../Img/LogoFooter.png" alt=""height="60px" width="60px">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link de vinculo a boostrap 4.6-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Link a fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../estilo.css">
+  <title>Encuesta</title>
+</head>
+
+<body><div class="back">
+  <header >
+    
+    <!-- Menu con enlaces relativos -->
+    <div class="menu">
+      <!-- Inicio de codigo de Navbar de boostrap-->
+      <nav class="navbar navbar-expand-md navbar-dark ">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./encuesta.html"><span class="aqui">Encuesta</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contactos.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="derechos">
-          <p> <span class="Dona"> Donatella </span>. Todos los derechos reservados 2019-2023.</p>
-        </div>
-        <div class="redes"><!-- enlaces a redes sociales -->
-          <p>Seguinos en nuestras redes</p>              
-          <a href="https://www.instagram.com/donatella__empanadas/"> <i class="fab fa-instagram"></i></a>
-            <a  href="https://www.facebook.com/donatella.empanadas"><i class="fab fa-facebook"></i></a>
-          </div>    
-        </footer>
-        
-        <!-- script de  boostrap -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-      </body>
-  </body>
+      </nav>
+      <!-- Fin de codigo Navbar -->
+    </div>
+    <div class="logo"><!-- Logo centro -->
+      <a href="../index.html""><img src="../Img/LogoHeader.png" alt="" height="90px" width="90px"></a>
+    </div>
+
+    <div class="pedidos">
+      <!-- enlaces a url -->
+      <input type="checkbox" id="pedidos-btn">
+      <div class="pedidos-nav">
+        <a class="pedidos-link b-take" href="www.wpp">Take Away</a>
+        <a class="pedidos-link b-pedido"
+          href="https://www.pedidosya.com.ar/restaurantes/la-plata/donatella-menu?search=Donatella">Pedidos Ya</a>
+        <a class="pedidos-link b-rapp" href="https://www.rappi.com.ar/restaurantes/115829-donatella">Rappi</a>
+        <a class="pedidos-link b-face " href="www.wpp"><i class="fab fa-facebook"></i></a>
+        <a class="pedidos-link  b-insta" href="www.wpp"> <i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="pedidos-btn"><label for="pedidos-btn" class="fa-solid fa-plus"> <i
+            class="fa-solid fa-plus"></i></label></div>
+      <!-- Fin de enlaces -->
+    </div>
+  </header>
+  </div>
+  
+  <div class="encabezado-encuesta">
+    <h1>Encuesta</h1>
+  </div>
+  <div class="text-encuesta">
+    <p>Tu opinión nos importa. Ayúdanos a mejorar completando nuestra encuesta en línea.</p>
+  </div>
+  <section class="encuesta">
+      <div class="caja-pregunta pregunta ">¿Con qué frecuencia compras nuestros productos?</div>
+      <div class="opciones-pregunta respuesta">
+        <div>Diariamente
+        <input type="radio" name="pregunta1" value="opcion1" /></div>
+        <div>Una vez a la semana
+        <input type="radio" name="pregunta1" value="opcion2" /></div>
+        <div>Varias veces por semana
+        <input type="radio" name="pregunta1" value="opcion3" /></div>
+        <div>Una vez al mes
+        <input type="radio" name="pregunta1" value="opcion4" /></div>
+        <div>vacias veces al mes
+        <input type="radio" name="pregunta1" value="opcion5" /></div>
+        <div>Alguna vez a lo lardo del año
+        <input type="radio" name="pregunta1" value="opcion6" /></div>
+      </div>
+      <div class="caja-pregunta2 pregunta">Pregunta 2</div>
+      <div class="opciones-pregunta2 respuesta">
+          <div>opcion1
+        <input type="radio" name="pregunta2" value="opcion1" /></div>
+        <div>opcion2
+        <input type="radio" name="pregunta2" value="opcion2" /></div>
+        <div>opcion3
+        <input type="radio" name="pregunta2" value="opcion3" /></div>
+        <div>opcion4
+        <input type="radio" name="pregunta2" value="opcion4" /></div>
+      </div>
+      <div class="caja-pregunta3  pregunta">Pregunta 3</div>
+     <div class="opciones-pregunta3 respuesta">
+      <div>opcion1
+      <input type="radio" name="pregunta3" value="opcion1" /></div>
+      <div>opcion2
+      <input type="radio" name="pregunta3" value="opcion2" /></div>
+      <div>opcion3
+      <input type="radio" name="pregunta3" value="opcion3" /></div>
+      <div>opcion4
+      <input type="radio" name="pregunta3" value="opcion4" /></div>
+    </div>
+      <div class="caja-pregunta4 pregunta">Pregunta 4</div>
+      <div class="opciones-pregunta4 respuesta">
+      <div>opcion1
+      <input type="radio" name="pregunta4" value="opcion1" /></div>
+      <div>opcion2
+      <input type="radio" name="pregunta4" value="opcion2" /></div>
+      <div>opcion3
+      <input type="radio" name="pregunta4" value="opcion3" /></div>
+      <div>opcion4
+      <input type="radio" name="pregunta4" value="opcion4" /></div>
+    </div>  
+   </section>   
+     <div class="enviar"><input type="submit" value="Enviar"></div>
+  <div class="back">
+  <footer>
+    <div class="logoFooter">
+      <img src="../Img/LogoFooter.png" alt="" height="60px" width="60px">
+    </div>
+    <div class="derechos">
+      <p> <span class="Dona"> Donatella </span>. Todos los derechos reservados 2019-2023.</p>
+    </div>
+    <div class="redes"><!-- enlaces a redes sociales -->
+      <p>Seguinos en nuestras redes</p>
+      <a href="https://www.instagram.com/donatella__empanadas/"> <i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/donatella.empanadas"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+</div>
+
+  <!-- script de  boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
 </html>
