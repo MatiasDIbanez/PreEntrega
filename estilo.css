@@ -44,6 +44,8 @@ body {
   padding: 0%;
   border: 0;
   background-color: #e7e6f6;
+  background-image: url(./Img/Back_Mesa\ de\ trabajo\ 1.png);
+  background-size: contain;
 }
 
 /*-----Header------*/
@@ -177,6 +179,7 @@ header {
   padding-block: 15px;
   text-align: center;
   margin-inline: auto;
+  background-color: #e7e6f6;
 }
 
 .galeria {
@@ -224,6 +227,12 @@ header {
   max-width: 80%;
   margin-inline: auto;
   padding: 10px;
+  background-color: #e7e6f6;
+}
+.texto-resenia p {
+  font-family: textos;
+  font-size: 20px;
+  text-shadow: rgba(0, 0, 0, 0.3);
 }
 
 /* Fin home */
