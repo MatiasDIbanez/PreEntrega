@@ -14,6 +14,10 @@
   font-family: "textos";
   src: url(./Fonts/TitilliumWeb-Regular.ttf);
 }
+@font-face {
+  font-family: "productos";
+  src: url(./Fonts/Kalam-Regular.ttf);
+}
 /*Tipo y color de fuentes en general para las paginas del sitio web */
 h1 {
   font-family: titulos;
@@ -520,11 +524,21 @@ header {
   position: relative;
   background-image: url(./Img/Productos/fondoProductos.jpg);
 }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .producto-encabezado {
+    padding-block: 10px;
+  }
+}
 .producto-encabezado h1 {
   color: #e7e6f6;
   font-size: 48px;
   position: relative;
   text-shadow: 5px 5px 8px #073e53;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .producto-encabezado h1 {
+    font-size: 39px;
+  }
 }
 
 .producto-encabezado::before {
@@ -540,20 +554,31 @@ header {
   margin-inline: auto;
 }
 .productos .producto-menu {
-  max-width: 1200px;
+  margin: 10px;
+  max-width: 850px;
   margin-inline: auto;
-  padding-inline: 10px;
+  padding-inline: 25px;
   background-color: rgba(7, 61, 83, 0.8274509804);
   border-radius: 8px;
   height: 50px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .productos .producto-menu {
+    font-size: 14px;
+  }
 }
 .productos .producto-menu ul {
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-flow: nowrap;
+  justify-content: space-around;
   list-style: none;
   padding-block: 7px;
+}
+.productos .producto-menu ul a {
+  text-decoration: none;
+  color: #fbbe63;
 }
 .productos .producto-menu ul li {
   padding: 4px;
@@ -562,13 +587,12 @@ header {
 }
 .productos .producto-menu ul li:hover {
   background-color: #073e53;
-  border-radius: 50%;
+  border-radius: 25px;
 }
 .productos .producto {
   padding-block: 20px;
   max-width: 1200px;
   margin-inline: auto;
-  /* height: 100vh; */
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);
   grid-template-rows: auto;
@@ -582,46 +606,56 @@ header {
   position: relative;
 }
 .productos .producto .item-producto p {
-  position: relative;
-  color: #e7e6f6;
-  font-size: 24px;
-  padding-block: 10px;
+  width: auto;
+  color: #220c10;
+  font-family: titulos;
+  text-shadow: 1px 1px 2px #e7e6f6;
+  font-size: 28px;
+  padding-top: 35px;
   text-align: center;
   align-self: center;
 }
 .productos .producto .item-producto .descripcion {
+  color: #220c10;
   opacity: 0;
 }
 .productos .producto .item-producto:hover {
+  filter: grayscale(0.4);
   scale: 1.05;
 }
 .productos .producto .item-producto:hover .descripcion {
+  padding: 6px;
   text-align: center;
-  font-size: 18px;
-  color: #e7e6f6;
+  font-family: productos;
+  text-shadow: 2px 2px 4px #e7e6f6;
+  font-size: 20px;
+  color: #220c10;
   opacity: 1;
-  transition-delay: 200ms;
-}
-.productos .producto .item-producto:hover .item-producto::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  transition: 0.5s;
 }
 
-.clasica1 {
+.clasico {
+  background-image: url(./Img/Productos/Empanadas3.jpg);
+  background-size: cover;
+}
+
+.especiales {
   background-image: url(./Img/Productos/Empanadas.jpg);
   background-size: cover;
 }
 
-.clasico {
+.veganas {
   background-image: url(./Img/Productos/Empanadas2.jpg);
   background-size: cover;
 }
 
-.clasica3 {
+.dul {
   background-image: url(./Img/Productos/Empanadas3.jpg);
+  background-size: cover;
+}
+
+.postres {
+  background-image: url(./Img/Productos/postre.jpg);
   background-size: cover;
 }
 
