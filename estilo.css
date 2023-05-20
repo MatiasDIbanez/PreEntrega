@@ -626,7 +626,7 @@ header {
 .productos .producto .item-producto:hover .descripcion {
   padding: 6px;
   text-align: center;
-  font-family: productos;
+  font-family: textos;
   text-shadow: 2px 2px 4px #e7e6f6;
   font-size: 20px;
   color: #220c10;
@@ -689,26 +689,35 @@ header {
   margin-inline: auto;
 }
 .encuestas .text-encuesta {
+  padding: 10px;
+  font-family: titulos;
+  font-size: 25px;
+  color: #fbbe63;
+  text-shadow: 2px 2px 3px #3f0d12, 3px 2px 3px #e7e6f6;
   grid-column: 1/5;
   grid-row: 1;
   text-align: center;
 }
 .encuestas .encuesta {
-  font-family: texto;
-  font-size: 16px;
-  color: rgb(1, 1, 1);
-  max-width: 1024px;
+  background-color: rgba(231, 230, 246, 0.0470588235);
+  background-image: linear-gradient(to top, rgba(231, 230, 246, 0.3490196078), rgba(231, 230, 246, 0.0470588235));
+  font-family: textos;
+  font-size: 18px;
+  color: #3f0d12;
+  max-width: 1200px;
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 1;
   grid-template-rows: auto;
+  padding: 10px;
 }
 .encuestas .encuesta .caja-pregunta {
   width: 100%;
-  font-family: titulo;
-  font-style: italic;
-  font-size: 24px;
-  color: rgb(1, 1, 1);
+  font-family: "haas_b", sans-serif;
+  font-size: 20px;
+  color: #3f0d12;
+  text-shadow: 1px 1px 3px #e7e6f6;
+  margin: 2px soplid #073e53;
+  border-bottom: 2px solid #073e53;
 }
 .encuestas .encuesta .respuesta {
   display: flex;
@@ -718,14 +727,17 @@ header {
   margin-bottom: 2rem;
 }
 .encuestas .encuesta .respuesta .opcion {
-  padding-inline: 10px;
+  padding-inline: 14px;
 }
 .encuestas .enviar {
-  background-color: rgb(68, 68, 114);
-  width: 200px;
-  border: 0;
-  padding: 10px;
-  margin: 20px;
+  margin-inline: auto;
+  font-family: titulos;
+  font-size: 20px;
+  color: #fbbe63;
+  border-bottom: #073e53;
+  background-color: #073e53;
+  width: 40px;
+  border-radius: 10px;
 }
 
 /* Formulario*/
@@ -797,6 +809,7 @@ header {
 }
 .informacion .imagen-equipo {
   background-image: url(./Img/Contacto/nosotros-1.jpg);
+  background-size: cover;
   width: 100%;
   grid-area: imagen-equipo;
 }
@@ -878,8 +891,8 @@ header {
     text-align: center;
   }
   .informacion .imagen-equipo {
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: 250px;
     margin-inline: auto;
   }
