@@ -52,11 +52,6 @@ body {
 }
 
 /*-----Header------*/
-.home {
-  max-width: 1400px;
-  margin-inline: auto;
-}
-
 header {
   max-width: 1024px;
   margin-inline: auto;
@@ -214,7 +209,11 @@ header {
 }
 
 /* Home */
-.promo {
+.home {
+  max-width: 100%;
+  margin-inline: auto;
+}
+.home .promo {
   padding-block: 15px;
   text-align: center;
   margin-inline: auto;
@@ -224,71 +223,72 @@ header {
      object-fit: cover;
   position: relative;
 }
-.promo h1 {
+.home .promo h1 {
   font-size: 48px;
   color: #e7e6f6;
   text-shadow: 5px 5px 8px #073e53;
   position: relative;
 }
-
-.promo::before {
+.home .promo::before {
   position: absolute;
   content: "";
   inset: 0;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-
-.galeria {
+.home .galeria {
   height: 40%;
   width: 100%;
   margin: auto;
 }
-.galeria ol li {
+.home .galeria ol li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
 }
-.galeria .carousel-item {
+.home .galeria .carousel-item {
   height: 20%;
 }
-.galeria .carousel-item img {
+.home .galeria .carousel-item img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-
-.encabezado {
+.home .resenias .encabezado {
   padding-block: 15px;
   text-align: center;
   margin-inline: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #08678c;
 }
-
-.reseñas {
+.home .resenias .texto-resenia {
+  max-width: 80%;
+  margin-inline: auto;
+}
+.home .resenias .texto-resenia p {
+  font-family: textos;
+  font-size: 20px;
+  text-shadow: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .home .resenias .texto-resenia {
+    text-align: center;
+  }
+}
+.home .resenias .reseñas {
   margin-inline: 20px;
   display: flex;
   flex-wrap: nowrap;
   overflow: scroll;
-  padding-block: 20px;
+  margin-bottom: 20px;
 }
-
-.resenias-item {
+.home .resenias .reseñas .resenias-item {
   flex: 1 0 auto;
   margin-inline: 20px;
-  background-color: #e7e6f6;
+  background-image: linear-gradient(to bottom, #073e53 30%, #e7e6f6);
+  box-shadow: 5px 5px 8px #073e53;
   width: 250px;
-  height: 250px;
-}
-
-.texto-resenia {
-  max-width: 80%;
-  margin-inline: auto;
-  padding: 10px;
-}
-.texto-resenia p {
-  font-family: textos;
-  font-size: 20px;
-  text-shadow: rgba(0, 0, 0, 0.3);
+  height: 300px;
 }
 
 /* Fin home */
